@@ -9,7 +9,7 @@
 using namespace cv;
 
 //lyp，是否将提取tensor output数据的步骤放到其他地方执行
-#define PULL_GET_TENSOR_HANDLE
+// #define PULL_GET_TENSOR_HANDLE
 
 #define MAX_NUM 100
 

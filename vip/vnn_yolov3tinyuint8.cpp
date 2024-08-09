@@ -336,7 +336,7 @@ vsi_nn_graph_t * vnn_CreateYolov3TinyUint8_NB
     attr.dtype.qnt_type = VSI_NN_QNT_TYPE_AFFINE_ASYMMETRIC;
 #ifdef HANDLE_OUT_TENSOR
     NEW_HANDLE_TENSOR(norm_tensor[4], attr, VSI_NN_TYPE_UINT8, output_data_3);
-    #else
+#else
     NEW_NORM_TENSOR(norm_tensor[4], attr, VSI_NN_TYPE_UINT8);
 #endif
 

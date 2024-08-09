@@ -38,7 +38,9 @@ typedef struct {
 	uint8_t						format;	/* 0: NV12; 1: rgb888 */
 }yolov3_tiny_config_t;
 
+/*初始化*/
 int yolov3_tiny_init(yolov3_tiny_config_t* config);
+
 int yolov3_tiny_process(uint8_t* frame, int frame_id);
 int yolov3_tiny_get_result_async(user_detected_list* list);
 void yolov3_tiny_release();

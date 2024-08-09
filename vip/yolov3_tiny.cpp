@@ -806,7 +806,7 @@ int yolov3_tiny_init(yolov3_tiny_config_t* config)
 			vnn_wrapper[i] = (struct Vnn_Wrapper*)calloc(1, sizeof(struct Vnn_Wrapper));
 			vnn_wrapper[i]->id = i;
 			/* Create the neural network */
-			vnn_wrapper[i]->graph = vnn_CreateNeuralNetwork(config->data_name, NULL, NULL, 
+			vnn_wrapper[i]->graph = vnn_CreateNeuralNetwork(config->data_name, NULL, NULL,NULL,
 															data_type, width, height);
 			TEST_CHECK_PTR( vnn_wrapper[i]->graph, err );
 		}
@@ -815,7 +815,7 @@ int yolov3_tiny_init(yolov3_tiny_config_t* config)
 			vnn_wrapper[i] = (struct Vnn_Wrapper*)calloc(1, sizeof(struct Vnn_Wrapper));
 			vnn_wrapper[i]->id = i;
 			/* Create the neural network */
-			vnn_wrapper[i]->graph = vnn_CreateNeuralNetwork(config->data_name, NULL, NULL, 
+			vnn_wrapper[i]->graph = vnn_CreateNeuralNetwork(config->data_name, NULL, NULL, NULL,
 															data_type, width, height);
 			TEST_CHECK_PTR( vnn_wrapper[i]->graph, err );
 		}
