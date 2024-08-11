@@ -29,7 +29,7 @@ export VIVANTE_SDK_DIR=./vip/driver/sdk
 export LD_LIBRARY_PATH=/usr/lib/arm-linux-gnueabihf/lapack:/usr/lib/arm-linux-gnueabihf:/lib/arm-linux-gnueabihf:/usr/lib:/lib:./vip/driver/sdk/drivers:./dc8000/lib:/usr/lib/arm-linux-gnueabihf/blas/
 export VSI_USE_IMAGE_PROCESS=1
 
-./yolov3-tiny -d 0 -w 1280 -h 720 -f 1280x720.nb -l 1  
+./yolov3-tiny -d 0 -w 1280 -h 720 -f network_binary.nb -l 1  
 #./yolov3-tiny -d 0 -w 1920 -h 1080 -f 1920x1080.nb -l 1 
 #./yolov3-tiny -d 0 -w 1280 -h 720 -f yolov3-tiny_uint8.export.data -l 1
 #./yolov3-tiny -d 0 -w 1920 -h 1080 -f yolov3-tiny_uint8.export.data -l 1  

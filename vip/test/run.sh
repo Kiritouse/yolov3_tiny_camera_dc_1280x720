@@ -29,6 +29,6 @@ export VSI_USE_IMAGE_PROCESS=1
 #./yolov3-tiny -d ./yolov3-tiny_uint8.export.data -w 1920 -h 1080 -f 0 -i 1920x1080.nv12 -l 1
 
 #   gdb --args ./yolov3-tiny -d ./network_binary.nb -w 1280 -h 720 -f 0 -i image_1280x720.nv12 -l 1
- ./yolov3-tiny -d ./network_binary.nb -w 1280 -h 720 -f 0 -i image_1280x720.nv12 -l 1
+ ./yolov3-tiny -d ./network_binary.nb -w 1280 -h 720 -f 0 -i test_1280x720.nv12 -l 1
 #./yolov3-tiny -d ./yolov3_uint8.export.data -w 1280 -h 720 -f 0 -i image_1280x720.nv12 -l 1
 

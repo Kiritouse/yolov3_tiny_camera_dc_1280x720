@@ -267,7 +267,7 @@ static int get_idle_outbuf_id(jpegdec_wrapper* wrapper)
 		if(i < wrapper->output_num){
 			break;
 		} else{
-			jpegdec_print(JPEGDEC_WARN, "all jpegdec outbuf busy, sleep 100us\n");
+			//jpegdec_print(JPEGDEC_WARN, "all jpegdec outbuf busy, sleep 100us\n");
 			usleep(100);
 		} 
 	}

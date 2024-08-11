@@ -23,7 +23,7 @@ DetectResult g_detect_objs;
 /*-------------------------------------------
                   Variable definitions
 -------------------------------------------*/
-int output_tensor_number=2;
+int output_tensor_number=3;
 //output_tensor_number=2 if yolov3-tiny,yolov4-tiny;
 //output_tensor_number=3 if yolov3,yolov4,yolov5
 int output_tensor_reverse=0;
@@ -677,7 +677,8 @@ detection* get_detections(vector<blob> & blobs,int img_w,int img_h, int netw, in
 #else
     FORWARD_LAYER_ARG_T *arg1 = new FORWARD_LAYER_ARG_T();
     FORWARD_LAYER_ARG_T *arg2 = new FORWARD_LAYER_ARG_T();
-    pthread_t tid_1, tid_2;
+	FORWARD_LAYER_ARG_T *arg3 = new FORWARD_LAYER_ARG_T();
+    pthread_t tid_1, tid_2,tid_3;
 
 	gettimeofday(&start, NULL);
 	//lyp，遍历blobs元素，每个元素都指向一个output data
@@ -785,6 +786,7 @@ vsi_status show_result_3
     detected_list* list
     )
 {
+	//printf("show_result_3\n");
 	vsi_status status = VSI_FAILURE;
 //	long long total_time_us, total_time_ms;
 //	struct timeval start, end;
@@ -838,6 +840,7 @@ vsi_status show_result_3
 //	total_time_ms = total_time_us / 1000;
 	printf("ConvertTensorToData cost %lld ms or %lld us\n", total_time_ms, total_time_us);		  
 #else
+
 	//if (output_tensor_number==3)
 	//{
 
@@ -1021,7 +1024,7 @@ vsi_status show_result_2
     detected_list* list
     )
 {
-	printf("show_result_2\n");
+	//printf("show_result_2\n");
 
 	    vsi_status status = VSI_FAILURE;
 		uint32_t i, sz1,sz2,stride;
@@ -1098,7 +1101,7 @@ vsi_status show_result_2
 									 &nboxes, classes, thresh, nms);
 			//}
 
-		printf("nboxes = %d\n", nboxes);
+		//printf("nboxes = %d\n", nboxes);
 				
 		int real_img_w = 1280;
 		int real_img_h = 720;
@@ -1178,7 +1181,7 @@ vsi_status show_result
 ////	long long total_time_us = total_time /= 1000;
 //	printf("show_result_%d time is %lld ms or %lld us\n", output_tensor_number, total_time, total_time_us);
 	   
-//	draw_detections();
+//draw_detections();
 	return status;
 
 }
