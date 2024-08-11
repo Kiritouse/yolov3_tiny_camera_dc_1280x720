@@ -1,1 +1,0 @@
-./camera_test -d 0 -w 1280 -h 720 -n 100 -i 1 -l 0 
