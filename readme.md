@@ -1,3 +1,4 @@
+修改测试
 # 1，编译：
 将代码复制到板子上，然后将*.nb,*.export.data的网络文件放到/下,同时拷贝驱动到/vip/driver(所拷贝的)后,在/yolov3_tiny_camera_dc目录下直接执行make命令
 
