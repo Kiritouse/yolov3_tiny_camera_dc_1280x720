@@ -24,7 +24,7 @@
 /*pre process for lid: images_328*/
 vsi_nn_preprocess_source_layout_e source_layout_for_norm_tensor_3 = VSI_NN_SOURCE_LAYOUT_NCHW;
 vsi_nn_preprocess_source_format_e source_format_for_norm_tensor_3 = VSI_NN_SOURCE_FORMAT_IMAGE_NV12;
-vsi_nn_preprocess_image_size_t size_for_norm_tensor_3 = {1280, 720, 3};
+vsi_nn_preprocess_image_size_t size_for_norm_tensor_3 = {1280, 720, 3}; //如果没有启用双路编码,这里就为1280x720
 int32_t roi_size[3] = {1280, 720, 3};
 
 vsi_nn_preprocess_image_resize_t resize_for_norm_tensor_3 = {640, 640, 3};

@@ -5,16 +5,5 @@
 test/
 #但不忽略/vip/test文件夹
 !/vip/test/
-
-# 忽略图的离线编译数据和在线编译所需数据
-*.nb
-*.export.data
-
 # 忽略所有编译后的中间产物
 *.o
-
-#忽略驱动程序
-/vip/driver/
-
-#忽略doc
-*.doc
