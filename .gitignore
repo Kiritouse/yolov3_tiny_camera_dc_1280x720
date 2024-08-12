@@ -7,3 +7,8 @@ test/
 !/vip/test/
 # 忽略所有编译后的中间产物
 *.o
+
+
+
+#忽略可执行文件
+yolov3-tiny
