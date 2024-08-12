@@ -9,6 +9,11 @@ test/
 *.o
 
 
+# 忽略大文件
+*.nb
+*.export.data
+/vip/driver/
+
 
 
 #忽略可执行文件
