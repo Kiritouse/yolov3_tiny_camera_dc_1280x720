@@ -1067,8 +1067,8 @@ int main(int argc, char *argv[])
 #else
 	//lyp，不启用yolov3-tiny前处理，这里需要设置为416x416
 	//lyp，这样yolov3-tiny将不会对图像进行缩放
-	yolov3_tiny_config.width = 416;
-	yolov3_tiny_config.height = 416;
+	yolov3_tiny_config.width = 640;
+	yolov3_tiny_config.height = 640;
 #endif
 	//lyp，nv12
 	yolov3_tiny_config.format = 0;

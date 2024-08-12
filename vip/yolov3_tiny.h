@@ -15,7 +15,7 @@
 #include "yolov3_tiny_global.h"
 
 #define YOLOV3_TINY_LOG_BUF_LEN		128
-#define YOLOV3_TINY_GRAPH_NUM		3
+#define YOLOV3_TINY_GRAPH_NUM		2
 
 #ifdef __cplusplus
 extern "C" {
